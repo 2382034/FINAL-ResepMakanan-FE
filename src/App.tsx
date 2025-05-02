@@ -30,14 +30,18 @@ import PostingDetail from "./pages/PostingDetail";
 import EditPosting from "./pages/EditPosting";
 // --- End Import Posting Pages ---
 
-// Utils & Providers
-import PrivateRoute from "./utils/PrivateRoute";
-import PublicRoute from "./utils/PublicRoute";
-import { AuthProvider } from "./utils/AuthProvider";
+// --- Import Note Pages ---
 import Note from "./pages/Note";
 import AddNote from "./pages/AddNote";
 import NoteDetail from "./pages/NoteDetail";
 import EditNote from "./pages/EditNote";
+// --- End Import Note Pages ---
+
+// Utils & Providers
+import PrivateRoute from "./utils/PrivateRoute";
+import PublicRoute from "./utils/PublicRoute";
+import { AuthProvider } from "./utils/AuthProvider";
+
 
 
 const queryClient = new QueryClient();
@@ -151,7 +155,7 @@ function App() {
 
                     {/* Notes Routes */}
                     <Route
-            path="notes"
+            path="note"
             element={
               <PrivateRoute>
                 <Note />
