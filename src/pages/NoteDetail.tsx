@@ -66,7 +66,7 @@ const NoteDetail = () => {
     mutationFn: () => deleteNote(id, getToken()),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["noteList"] });
-      navigate("/notes", { replace: true });
+      navigate("/note", { replace: true });
     }
   });
 
