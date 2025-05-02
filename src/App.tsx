@@ -155,7 +155,7 @@ function App() {
 
                     {/* Notes Routes */}
                     <Route
-            path="notes"
+            path="note"
             element={
               <PrivateRoute>
                 <Note />
