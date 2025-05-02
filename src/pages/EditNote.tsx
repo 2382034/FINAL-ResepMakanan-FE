@@ -33,7 +33,7 @@ const EditNote = () => {
     onSuccess: () => {
       // Invalidate dan refetch data
       queryClient.invalidateQueries({ queryKey: ["noteList"] });
-      navigate("/notes", { replace: true });
+      navigate("/note", { replace: true });
     }
   });
 
