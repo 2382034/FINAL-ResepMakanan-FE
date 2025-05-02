@@ -26,7 +26,7 @@ const AddNote = () => {
 
   useEffect(() => {
     if (isSuccess) {
-      navigate("/notes", { replace: true });
+      navigate("/note", { replace: true });
     }
   }, [isSuccess, navigate]);
 
